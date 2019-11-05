@@ -42,7 +42,7 @@ This role can be installed from [Ansible Galaxy](https://galaxy.ansible.com/):
 License
 -------
 
-GPLv3+
+MIT
 
 Author Information
 ------------------

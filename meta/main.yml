@@ -2,9 +2,10 @@
 galaxy_info:
   author: Dmitrii Kashin
   description: install packages
-  license: GPLv3
+  role_name: pkg_install
+  license: MIT
 
-  min_ansible_version: 2.0
+  min_ansible_version: 2.4
 
   platforms:
     - name: Ubuntu
@@ -23,7 +24,10 @@ galaxy_info:
   galaxy_tags:
     - system
     - package
+    - install
     - apt
+    - yum
+    - dnf
 
 allow_duplicates: true
 dependencies: []
