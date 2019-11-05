@@ -4,5 +4,5 @@
   become: true
   roles:
     - role: freehck.pkg_install
-      pkg_install_packages: [ zsh ]
-
+      pkg_install_packages:
+        - zsh

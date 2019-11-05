@@ -1,7 +1,5 @@
+---
 pkg_install_packages: []
-pkg_install_state: present
-#pkg_install_state: latest
-#pkg_install_state: absent
-pkg_install_update_cache: yes
-pkg_install_cache_valid_time: 600 # seconds
-
+pkg_install_state: present   # latest / absent
+pkg_install_update_cache: true
+pkg_install_cache_valid_time: 600   # seconds
