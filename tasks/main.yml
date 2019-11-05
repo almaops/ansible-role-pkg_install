@@ -1,0 +1,8 @@
+- include: apt.yml
+  when: ansible_os_family == "Debian"
+
+- include: yum.yml
+  when: ansible_os_family == "RedHat" and ansible_lsb.major_release|int < 8
+
+- include: dnf.yml
+  when: ansible_os_family == "RedHat" and ansible_lsb.major_release|int >= 8

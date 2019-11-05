@@ -1,0 +1,8 @@
+# yum does not support cache_valid_time
+
+- name: install packages
+  yum:
+    name: "{{ pkg_install_packages }}"
+    state: "{{ pkg_install_state }}"
+    update_cache: "{{ pkg_install_update_cache }}"
+    
