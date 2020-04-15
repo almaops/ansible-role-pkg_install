@@ -14,4 +14,4 @@
     - "{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
     - "{{ ansible_os_family }}.yml"
 
-- include: "{{ pkg_install_package_manager }}.yml"
+- include: "{{ pkg_install_package_manager | default('none') }}.yml"
