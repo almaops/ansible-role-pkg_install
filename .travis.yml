@@ -18,8 +18,8 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ..
-  - mv ansible-role-pkg-install freehck.$ROLE_NAME
-  - cd freehck.$ROLE_NAME
+  - mv ansible-role-pkg-install almaops.$ROLE_NAME
+  - cd almaops.$ROLE_NAME
 
 script:
   # Run tests.
@@ -27,3 +27,4 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+...
