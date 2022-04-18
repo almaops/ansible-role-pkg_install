@@ -3,6 +3,7 @@
   hosts: all
   become: true
   roles:
-    - role: freehck.pkg_install
+    - role: almaops.pkg_install
       pkg_install_packages:
         - zsh
+...
