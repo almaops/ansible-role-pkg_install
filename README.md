@@ -1,4 +1,4 @@
-freehck.pkg_install
+almaops.pkg_install
 =========
 
 This role simply installs a list of packages.
@@ -23,28 +23,29 @@ It can be `present` (default), `latest` or `absent`
 
 Example
 -------
-
-    - hosts: all
-      become: true
-      roles:
-        - role: freehck.pkg_install
-          pkg_install_packages:
-            - tmux
-			- screen
+```
+- hosts: all
+  become: true
+  roles:
+    - role: almaops.pkg_install
+      pkg_install_packages:
+        - tmux
+        - screen
+```
 
 Install
 -------
 
-This role can be installed from [Ansible Galaxy](https://galaxy.ansible.com/):
+This role can be installed from [Ansible Galaxy](https://galaxy.ansible.com/almaops/pkg_install):
 
-`ansible-galaxy install freehck.pkg_install`
+`ansible-galaxy install almaops.pkg_install`
 
 License
 -------
 
-MIT
+[MIT](./LICENSE)
 
 Author Information
 ------------------
 
-This role was written by Dmitrii Kashin aka freehck
+This role was written by Dmitrii Kashin aka [freehck](https://github.com/freehck)
