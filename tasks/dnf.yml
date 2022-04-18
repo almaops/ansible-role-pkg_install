@@ -2,7 +2,8 @@
 # dnf does not support cache_valid_time
 
 - name: install packages
-  dnf:
+  ansible.builtin.dnf:
     name: "{{ pkg_install_packages }}"
     state: "{{ pkg_install_state }}"
     update_cache: "{{ pkg_install_update_cache }}"
+...

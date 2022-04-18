@@ -6,15 +6,16 @@
 - name: install packages
   block:
     - name: with cache update
-      apt:
+      ansible.builtin.apt:
         name: "{{ pkg_install_packages }}"
         state: "{{ pkg_install_state }}"
         cache_valid_time: "{{ pkg_install_cache_valid_time }}"
         update_cache: true
       when: pkg_install_update_cache
     - name: w/o cache update
-      apt:
+      ansible.builtin.apt:
         name: "{{ pkg_install_packages }}"
         state: "{{ pkg_install_state }}"
         update_cache: false
       when: not pkg_install_update_cache
+...
