@@ -3,10 +3,9 @@ galaxy_info:
   author: Dmitrii Kashin
   description: install packages
   role_name: pkg_install
+  namespace: almaops
   license: MIT
-
-  min_ansible_version: 2.4
-
+  min_ansible_version: 2.10
   platforms:
     - name: Ubuntu
       versions:
@@ -20,7 +19,6 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-
   galaxy_tags:
     - system
     - package
@@ -28,6 +26,6 @@ galaxy_info:
     - apt
     - yum
     - dnf
-
 allow_duplicates: true
 dependencies: []
+...
